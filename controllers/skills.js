@@ -87,5 +87,5 @@ export {
   show,
   deleteSkill as delete,
   edit,
-  update,
+  update
 }

@@ -19,6 +19,13 @@ router.delete('/:id', skillsCtrl.delete)
 
 router.put('/:id', skillsCtrl.update)
 
+
+
+
+
+
+
+
 router.get('/', function(req, res) {
   res.render('skills/index', {
     skills : skills
