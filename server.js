@@ -26,6 +26,11 @@ app.use(function(req, res, next) {
   next()
 })
 
+app.use(function(req, res, next) {
+  req.today = new Date().toLocaleDateString()
+  next()
+})
+
 // middleware
 app.use(logger('dev'))
 app.use(express.json())

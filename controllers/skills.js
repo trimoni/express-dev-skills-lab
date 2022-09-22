@@ -5,7 +5,8 @@ function index(req, res) {
   .then(skills => {
     res.render('skills/index', {
       skills : skills,
-      time: req.time
+      time: req.time,
+      today: req.today,
     })
   })
   .catch(error => {
